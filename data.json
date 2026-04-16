@@ -1,0 +1,18 @@
+[
+    {
+        "id": "67",
+        "name": "Castillo, Mc V",
+        "status": "Present",
+        "session_date": "2026-03-26",
+        "created_at": "2026-03-26 10:51:23",
+        "updated_at": "2026-03-26 10:51:23"
+    },
+    {
+        "id": "67",
+        "name": "Castillo, Mc V",
+        "status": "Absent",
+        "session_date": "2026-03-26",
+        "created_at": "2026-03-26 10:51:36",
+        "updated_at": "2026-03-26 10:51:36"
+    }
+]
