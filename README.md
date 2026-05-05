@@ -14,8 +14,7 @@
 - # Prerequisites
 - Python 3.x
 - Pandas library (installed via requirements.txt)
-# Launching the Program:
+# Installing Pandas:
 1.) On your terminal, execute:
     pip install -r requirements.txt
-2.) 
 ## Prepared by / Created by : Castillo, Mc Lawrence V.
