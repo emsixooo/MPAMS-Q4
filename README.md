@@ -11,4 +11,11 @@
 - Create, Read, Update, Delete attendance entries.
 - Create weekly, monthly summaries of absences.
 - Export data in .json to spreadsheet (MS Excel .xlsx file)
+- # Prerequisites
+- Python 3.x
+- Pandas library (installed via requirements.txt)
+# Launching the Program:
+1.) On your terminal, execute:
+    pip install -r requirements.txt
+2.) 
 ## Prepared by / Created by : Castillo, Mc Lawrence V.
