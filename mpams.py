@@ -261,13 +261,13 @@ if __name__ == "__main__":
                     "name": f"{LNinput}, {FNinput} {MNinput}",
                     "status": "Present" if statusinput == "P" else "Absent"
                 })
-                print("Sucessfully added entry! Do you want to continue? (1 for Yes, 0 for No)")
+                print("Sucessfully added entry! Do you wish to go back to main menu? (1 for Yes, 0 for No)")
                 a = int(input())
 
         # If user inputs 2, we will display all entries
         elif choice == '2':
             read_entries()
-            print("Do you wish to view the entries again? (1 for Yes, 0 for No)")
+            print("Do you wish to go back to main menu? (1 for Yes, 0 for No)")
             a = int(input())
 
         # If user inputs 3, we will update an entry
@@ -280,7 +280,7 @@ if __name__ == "__main__":
                 FNinput = input("Enter the new First Name: ")
                 MNinput = input("Enter the new Middle Name: ")
                 update_entry(IDinput, {"name": f"{LNinput}, {FNinput} {MNinput}"})
-                print("Entry update successful! Do you wish to update another entry? (1 for Yes, 0 for No)")
+                print("Entry update successful! Do you wish to go back to main menu? (1 for Yes, 0 for No)")
                 a = int(input())
 
             elif desicion == '2':
@@ -291,14 +291,14 @@ if __name__ == "__main__":
                     statusinput = input("Enter the new Status (P for Present, A for Absent): ")
                 if statusinput in ("P", "A"):
                     update_entry(IDinput, {"status": "Present" if statusinput == "P" else "Absent"})
-                    print("Entry update successful! Do you wish to update another entry? (1 for Yes, 0 for No)")
+                    print("Entry update successful! Do you wish to go back to main menu? (1 for Yes, 0 for No)")
                     a = int(input())
 
             elif desicion == '3':
                 IDinput = input("Enter the ID of the entry you want to update: ")
                 dateinput = input("Enter the new session date (YYYY-MM-DD): ")
                 update_entry(IDinput, {"session_date": dateinput})
-                print("Entry date update successful! Do you wish to update another entry? (1 for Yes, 0 for No)")
+                print("Entry date update successful! Do you wish to go back to main menu? (1 for Yes, 0 for No)")
                 a = int(input())
 
             else:
@@ -308,19 +308,19 @@ if __name__ == "__main__":
         elif choice == '4':
             IDinput = input("Enter the ID of the entry you want to delete: ")
             delete_entry(IDinput)
-            print("Entry deleted successfully! Do you wish to delete another entry? (1 for Yes, 0 for No)")
+            print("Entry deleted successfully! Do you wish to go back to main menu? (1 for Yes, 0 for No)")
             a = int(input())
 
         elif choice == '5':
             attendance_summary()
-            print("Do you wish to view the attendance summary again? (1 for Yes, 0 for No)")
+            print("Do you wish to go back to main menu? (1 for Yes, 0 for No)")
             a = int(input())
 
         elif choice == '6':
             filename = input("Enter the filename for the Excel report: ")
             export_report_excel(filename)
             print(f"Export successful! The file was saved as ({filename}) in the same folder as this program.")
-            print("Do you wish to export the report again? (1 for Yes, 0 for No)")
+            print("Do you wish to go back to main menu? (1 for Yes, 0 for No)")
             a = int(input())
 
         elif choice == '7':
@@ -329,6 +329,6 @@ if __name__ == "__main__":
 
         else:
             print("Invalid choice. Please enter a number between 1 and 7.")
-            print("Do you wish to try again? (1 for Yes, 0 for No)")
+            print("Do you wish to go back to the main menu? (1 for Yes, 0 for No)")
             a = int(input())
        
